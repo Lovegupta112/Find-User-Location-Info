@@ -91,7 +91,7 @@ async function fetchPostOffices(pincode) {
       `https://api.postalpincode.in/pincode/${pincode}`
     );
     const data = await response.json();
-    // console.log(data[0].Message);
+    console.log(data, data[0].Message);
     postOffices = data[0].PostOffice;
     document.querySelector(".forMessage span").innerHTML = data[0].Message;
 
