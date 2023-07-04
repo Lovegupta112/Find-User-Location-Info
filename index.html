@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find User-Location Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="ip-address">
+            <h2>MY Public IP ADDRESS :</h2>
+            <span id="ip-span"></span>
+        </div>
+        <button id="getData">Get Data</button>
+
+        <main>
+            <!-- for ip-information -->
+            <div class="ip-info">
+                <div class="first">
+                    <div class="forLat">
+                        <h3>Lat:</h3><span></span>
+                    </div>
+                    <div class="forCity">
+                        <h3>City:</h3><span></span>
+                    </div>
+                    <div class="forOrg">
+                        <h3>Organisation:</h3><span></span>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="forLong">
+                        <h3>Long:</h3><span></span>
+                    </div>
+                    <div class="forRegion">
+                        <h3>Region:</h3><span></span>
+                    </div>
+                    <div class="forHostname">
+                        <h3> Hostname:</h3><span></span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- for googlemap -->
+            <div class="google-map-container">
+              
+            </div>
+            <!-- for other information  -->
+            <div class="other-info">
+                <div class="forTimeZone">
+                    <h3>Time Zone:</h3><span></span>
+                </div>
+                <div class="forDateTime">
+                    <h3>Date And Time:</h3><span></span>
+                </div>
+                <div class="forPincode">
+                    <h3>Pincode:</h3><span></span>
+                </div>
+                <div class="forMessage">
+                    <h3>Message:</h3><span></span>
+                </div>
+            </div>
+
+            <!-- for filter input -->
+            <div class="filterinput">
+                <div class="image">
+                    <img src="./images/Vector.png" alt="search-icon">
+                </div>
+                <input type="search" name="filter" id="filter">
+            </div>
+
+            <!-- for postOffices result -->
+            <div class="results-info">
+             
+            </div>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
